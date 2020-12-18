@@ -8,7 +8,9 @@ A retrieval-based chatbot uses predefined input patterns and responses. It uses 
 Generative models are not based on some predefined responses.
 They are based on sequence 2 sequence neural networks. It is the same idea as machine translation.  
   
-![](extras/chat.gif)
+<p align="center">
+  <img width="400" height="560" src="extras/chat.gif">
+</p>
 
 # About project - Delhi Touropia
 We have created a chatbot named Delhi Touropia using deep learning techniques. This bot will chat with user to suggest him/ her best places in and around Delhi. It will show description of Hotels, Places, Cafés. 
@@ -16,7 +18,9 @@ We have created a chatbot named Delhi Touropia using deep learning techniques. T
 The chatbot will be trained on the dataset which contains categories, pattern and responses. We use a special recurrent neural network (LSTM) to classify which category the user’s message belongs to and then we will give a random response from the list of responses. 
    
 
-![Place Description](extras/Description.jpg)
+<p align="center">
+  <img width="400" height="560" src="extras/Description.jpg">
+</p>
 
 ## Dataset
 
@@ -46,7 +50,9 @@ pip install tensorflow, keras, pickle, nltk
 - ***Chatbot_model.h5*** – This is the trained model that contains information about the model and has weights of the neurons.
 - ***Chatgui.py*** – This is the Python script in which we implemented GUI for our chatbot. Users can easily interact with the bot.    
 
-![Files](extras/allfile.png)
+<p align="center">
+  <img src="extras/allfile.png">
+</p>
 
 ## Steps to create a chatbot in Python from scratch:
 1. Import and load the data file
@@ -60,10 +66,16 @@ First, make a file name as train_chatbot.py. We import the necessary packages fo
 
 The data file is in JSON format so we used the json package to parse the JSON file into Python.  
   
-![](extras/package.JPG)  
+<p align="center">
+  <img src="extras/package.JPG">
+</p>  
+
 This is how intent.json file looks  
   
-![](extras/intentjson.png)
+<p align="center">
+  <img src="extras/intentjson.png">
+</p>  
+
 # 2. Data Preprocess
 When working with text data, we need to perform various preprocessing on the data before we make a machine learning or a deep learning model. Tokenizing is the most basic and first thing you can do on text data. `Tokenizing` is the process of breaking the whole text into small parts like words.  
 After Tokenizing, we will lemmatize each word and remove duplicate words from the list. `Lemmatizing` is the process of converting a word into its lemma form and then creating a pickle file to store the Python objects which we will use while predicting.
@@ -74,12 +86,64 @@ After training data ready, now we will build a deep neural network that has 3 la
 # 5. Predict the response
 We will load the trained model and then use a graphical user interface that will predict the response from the bot. The model will only tell us the class it belongs to, so we will implement some functions which will identify the class and then retrieve us a random response from the list of responses.  
 Now we will code a graphical user interface. For this, we use the Tkinter library which already comes in python. We will take the input message from the user and then use the helper functions we have created to get the response from the bot and display it on the GUI.
-# 6. Run the chatbot
-To run the chatbot, we have two main files; train_chatbot.py and chatapp.py.  
 
-First, we train the model using the command in the terminal:  
-```python train_chatbot.py```  
-If you have successfully created the model. Then to run the app, we run the second file.
+# Work Structure
+## Flowchart  
+  
+<p align="center">
+  <img width="500" height="900" src="extras/Flowchart.png">
+</p>  
+    
+## Other Snapshot  
+> Start Conversation  
+<p align="center">
+  <img width="400" height="560" src="extras/Start.jpg">
+</p>  
+  
+> End Conversation  
+<p align="center">
+  <img width="400" height="560" src="extras/Ending.jpg">
+</p>  
+  
+>Model Training  
+<p align="center">
+  <img width="660" height="400" src="extras/train.jpeg">
+</p>  
+  
+> Training Words  
+<p align="center">
+  <img src="extras/words.jpeg">
+</p> 
+  
+# How to download and run project
+- Click on code and then download zip  
+<p align="center">
+  <img src="extras/download.JPG">
+</p>  
 
-```python chatgui.py```  
+- Extract Zip folder
+- Run the chatbot - To run the chatbot, we have two main files.
+   - train_chatbot.py 
+   - chatapp.py.  
+- First, we train the model using the command in the terminal:  
+   ```python train_chatbot.py```  
+- If you have successfully created the model. Then to run the app, we run the second file.   
+   ```python chatgui.py```  
 The program will open up a GUI window within a few seconds. With the GUI you can easily chat with the bot.  
+
+<p align="center">
+  <img width="660" height="400" src="extras/model.gif">
+</p>  
+
+# Team Info
+- [Yash Chandane](https://github.com/yash1217)
+- [Samiksha Bhavsar](https://github.com/SamikshaBhavsar)
+- [Sarthak Rastogi](https://github.com/sarthakR1)
+  
+# Referance
+- https://lucid.app/lucidchart/invitations/accept/8bb728d5-66ca-4c2d-8da9-51c7edb080ee
+- https://www.techwithtim.net/tutorials/ai-chatbot/part-1/
+- https://morioh.com/p/9ed6a9bd5ab7
+- https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44
+- http://man.hubwiz.com/docset/Keras.docset/Contents/Resources/Documents/index.html
+- Chatbot tools.

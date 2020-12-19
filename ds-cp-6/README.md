@@ -2,10 +2,6 @@
 
 ## Movie Recommendation System
 
-## How to Run 
-1. Download the zip file. <a href ="https://github.com/B-UDAY-CHANDRA-001/hollywood-movie-recommendation-system/archive/main.zip" >Click Here</a></h3>
-  - Go to the movie_recommd-main and do `pip install -r requirements.txt`(cmd prompt)
-2. flask run.
 
 ## About project
 
@@ -19,5 +15,9 @@
  - SACHIN
  
  ## WorkFlow:
- ![title](movie_recommd-main/static/img/0001.jpg)
+ ![title](movie_recommd-main/static/img/0001.jpg )
  
+## How to Run 
+1. Download the zip file. <a href ="https://github.com/B-UDAY-CHANDRA-001/hollywood-movie-recommendation-system/archive/main.zip" >Click Here</a></h3>
+  - Go to the movie_recommd-main and do `pip install -r requirements.txt`(cmd prompt)
+2. flask run.
